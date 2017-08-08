@@ -1,0 +1,107 @@
+__author__ = 'roger'
+import sys
+sys.path.append('../')
+import unittest
+from src.config import BRAEConfig
+from src.rae_batch import RecursiveAutoEncoder, BilingualPhraseRAE
+import numpy as np
+import theano
+
+
+def test_rae_batch():
+    batch_size = 2
+    dim_size = 1
+    # W (2 * dim_size, dim_size)
+    # Wr (dim_size, )
+    # b (2 * dim_size, dim_size)
+    # br (2 * dim_size, )
+    rae = RecursiveAutoEncoder(batch=batch_size, dim=dim_size, uniform_range=0.01, normalize=False,
+                               dropout=0, activation="Iden")
+    a_seq = np.array([[0, 1, 3],
+                      [2, 3, 4],
+                      [4, 4, 4]])
+    a_mask = np.array([1, 1, 0])
+    a_vec = np.array([[0], [1], [2], [0], [0], [0], [0]])
+
+    b_seq = np.array([[0, 1, 4],
+                      [2, 3, 5],
+                      [4, 5, 6]])
+    b_mask = np.array([1, 1, 1])
+    b_vec = np.array([[0], [1], [2], [3], [0], [0], [0]])
+    c_seq = np.array([[0, 0, 0],
+                      [0, 0, 0],
+                      [0, 0, 0]])
+    c_mask = np.array([1, 0, 0])
+    c_vec = np.array([[20], [0], [0], [0], [0], [0], [0]])
+
+    in_seq = np.array([a_seq, b_seq, c_seq], dtype=np.int32)
+    in_mask = np.array([a_mask, b_mask, c_mask], dtype=theano.config.floatX)
+    in_vec = np.array([a_vec, b_vec, c_vec], dtype=theano.config.floatX)
+    print rae.W.set_value(np.array([[1, 1]], dtype=theano.config.floatX))
+    print rae.Wr.set_value(np.array([[1], [1]], dtype=theano.config.floatX))
+    print rae.b.get_value()
+    print rae.br.get_value()
+    print in_seq.shape
+    print in_mask.shape
+    print in_vec.shape
+    forward = theano.function([rae.input_seqs, rae.input_mask, rae.input_vec],
+                              rae.result)
+    print forward(in_seq, in_mask, in_vec)
+    return
+
+
+def test_brae_batch():
+    batch_size = 2
+    dim_size = 1
+    # W (2 * dim_size, dim_size)
+    # Wr (dim_size, )
+    # b (2 * dim_size, dim_size)
+    # br (2 * dim_size, )
+    config = BRAEConfig("../conf/brae_batch_test.conf")
+    src_embedding =
+    rae = BilingualPhraseRAE(source_dim=dim_size, target_dim=dim_size, config=config)
+    a_seq = np.array([[0, 1, 3],
+                      [2, 3, 4],
+                      [4, 4, 4]])
+    a_mask = np.array([1, 1, 0])
+    a_vec = np.array([[0], [1], [2], [0], [0], [0], [0]])
+
+    b_seq = np.array([[0, 1, 4],
+                      [2, 3, 5],
+                      [4, 5, 6]])
+    b_mask = np.array([1, 1, 1])
+    b_vec = np.array([[0], [1], [2], [3], [0], [0], [0]])
+
+    in_seq = np.array([a_seq, b_seq], dtype=np.int32)
+    in_mask = np.array([a_mask, b_mask], dtype=theano.config.floatX)
+    in_vec = np.array([a_vec, b_vec], dtype=theano.config.floatX)
+    neg_seq = np.array([a_seq, b_seq], dtype=np.int32)
+    neg_mask = np.array([a_mask, b_mask], dtype=theano.config.floatX)
+    neg_vec = np.array([a_vec, b_vec], dtype=theano.config.floatX)
+
+    _in_seq = np.array([a_seq, b_seq], dtype=np.int32)
+    _in_mask = np.array([a_mask, b_mask], dtype=theano.config.floatX)
+    _in_vec = np.array([a_vec, b_vec], dtype=theano.config.floatX)
+    _neg_seq = np.array([a_seq, b_seq], dtype=np.int32)
+    _neg_mask = np.array([a_mask, b_mask], dtype=theano.config.floatX)
+    _neg_vec = np.array([a_vec, b_vec], dtype=theano.config.floatX)
+    rae.source_encoder.W.set_value(np.array([[1, 1]], dtype=theano.config.floatX))
+    rae.source_encoder.Wr.set_value(np.array([[1], [1]], dtype=theano.config.floatX))
+    rae.target_encoder.W.set_value(np.array([[1, 1]], dtype=theano.config.floatX))
+    rae.target_encoder.Wr.set_value(np.array([[1], [1]], dtype=theano.config.floatX))
+    print in_seq.shape
+    print in_mask.shape
+    print in_vec.shape
+    print rae.test_grad(in_seq, in_mask, in_vec, neg_seq, neg_mask, neg_vec,
+                        _in_seq, _in_mask, _in_vec, _neg_seq, _neg_mask, _neg_vec)
+    return
+
+
+class MyTestCase(unittest.TestCase):
+    def test_something(self):
+        test_brae_batch()
+        self.assertEqual(True, True)
+
+
+if __name__ == '__main__':
+    unittest.main()

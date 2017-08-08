@@ -1,0 +1,120 @@
+04-27 15:54 [MainProcess, 15072] [INFO ]  loading word embedding from ../gbrae/data/embedding/en.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loaded 44681 word map pre-trained from ../gbrae/data/embedding/en.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loading word embedding from ../gbrae/data/embedding/zh.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loaded 52494 word map pre-trained from ../gbrae/data/embedding/zh.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loading word embedding from ../gbrae/data/embedding/zh.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loaded 52493 words pre-trained from ../gbrae/data/embedding/zh.token.dim50.bin with 50
+04-27 15:54 [MainProcess, 15072] [INFO ]  Initialize 1 Word with Normal (mean=0.000000, std=0.010000)
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word Embedding built finished, summarized as below: 
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word Size: 52495
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word dimension: 50
+04-27 15:54 [MainProcess, 15072] [INFO ]  loading word embedding from ../gbrae/data/embedding/en.token.dim50.bin
+04-27 15:54 [MainProcess, 15072] [INFO ]  loaded 44680 words pre-trained from ../gbrae/data/embedding/en.token.dim50.bin with 50
+04-27 15:54 [MainProcess, 15072] [INFO ]  Initialize 1 Word with Normal (mean=0.000000, std=0.010000)
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word Embedding built finished, summarized as below: 
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word Size: 44682
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Word dimension: 50
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Architecture of RAE built finished, summarized as below: 
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Hidden dimension: 50
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Normalize:        True
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Dropout Rate:     0.0
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Architecture of RAE built finished, summarized as below: 
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Hidden dimension: 50
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Normalize:        True
+04-27 15:54 [MainProcess, 15072] [DEBUG]  Dropout Rate:     0.0
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Architecture of BRAE built finished, summarized as below: 
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Alpha:            0.050000
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Lambda Rec:       0.010000
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Lambda Sem:       0.010000
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Lambda Word:      0.010000
+04-27 15:56 [MainProcess, 15072] [DEBUG]  Learning Rate:    0.010000
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Train Details
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Number of epochs: 25
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Size of Batches:  500
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Size phrase pair: 618075
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Size Source word: 52495
+04-27 15:57 [MainProcess, 15072] [DEBUG]  Size Target word: 44682
+04-27 15:57 [MainProcess, 15072] [INFO ]  Start training...
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.8411343097686768, dtype=float32), array(14.692770957946777, dtype=float32), array(1.9901856184005737, dtype=float32), array(0.21581973135471344, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.5390024185180664, dtype=float32), array(27.07768440246582, dtype=float32), array(1.9987396001815796, dtype=float32), array(0.2863156199455261, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(4.525637626647949, dtype=float32), array(44.1934814453125, dtype=float32), array(2.000669240951538, dtype=float32), array(0.4153275787830353, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.9565882682800293, dtype=float32), array(16.191862106323242, dtype=float32), array(1.9973310232162476, dtype=float32), array(0.24953076243400574, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.924328088760376, dtype=float32), array(33.08490753173828, dtype=float32), array(1.9972621202468872, dtype=float32), array(0.3726837933063507, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.149921178817749, dtype=float32), array(19.32284927368164, dtype=float32), array(1.99074387550354, dtype=float32), array(0.2925723195075989, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.543280839920044, dtype=float32), array(26.114360809326172, dtype=float32), array(1.9921221733093262, dtype=float32), array(0.3450470566749573, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.9674062728881836, dtype=float32), array(16.074369430541992, dtype=float32), array(1.9871888160705566, dtype=float32), array(0.2758587896823883, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.545506715774536, dtype=float32), array(26.188941955566406, dtype=float32), array(1.9835871458053589, dtype=float32), array(0.3516519367694855, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.6985666751861572, dtype=float32), array(28.11411476135254, dtype=float32), array(1.9864317178726196, dtype=float32), array(0.4057508707046509, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.70767879486084, dtype=float32), array(11.70833683013916, dtype=float32), array(1.988947868347168, dtype=float32), array(0.2327616661787033, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.70529842376709, dtype=float32), array(11.72258472442627, dtype=float32), array(1.9842424392700195, dtype=float32), array(0.2341391146183014, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.9921529293060303, dtype=float32), array(33.732601165771484, dtype=float32), array(1.9824316501617432, dtype=float32), array(0.42221322655677795, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.8295230865478516, dtype=float32), array(30.408029556274414, dtype=float32), array(1.9784502983093262, dtype=float32), array(0.4295942783355713, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.1567790508270264, dtype=float32), array(19.348094940185547, dtype=float32), array(1.9731388092041016, dtype=float32), array(0.31489261984825134, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.2337028980255127, dtype=float32), array(20.344867706298828, dtype=float32), array(1.9715557098388672, dtype=float32), array(0.34348177909851074, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.1254749298095703, dtype=float32), array(18.921314239501953, dtype=float32), array(1.9634758234024048, dtype=float32), array(0.3141074776649475, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.8466250896453857, dtype=float32), array(14.303190231323242, dtype=float32), array(1.9542818069458008, dtype=float32), array(0.27489787340164185, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.095698595046997, dtype=float32), array(18.472824096679688, dtype=float32), array(1.9538935422897339, dtype=float32), array(0.3158586919307709, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.663870096206665, dtype=float32), array(27.38722038269043, dtype=float32), array(1.9661046266555786, dtype=float32), array(0.42670968174934387, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.041210412979126, dtype=float32), array(0.0, dtype=float32), array(1.9737250804901123, dtype=float32), array(0.16617150604724884, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.455869674682617, dtype=float32), array(7.704391002655029, dtype=float32), array(1.967515468597412, dtype=float32), array(0.20151051878929138, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.338855028152466, dtype=float32), array(23.19610595703125, dtype=float32), array(1.9336358308792114, dtype=float32), array(0.3420957028865814, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.1945416927337646, dtype=float32), array(20.11320686340332, dtype=float32), array(1.9440062046051025, dtype=float32), array(0.3420755863189697, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.1441595554351807, dtype=float32), array(2.314641237258911, dtype=float32), array(1.9571380615234375, dtype=float32), array(0.169146329164505, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.215283155441284, dtype=float32), array(4.336651802062988, dtype=float32), array(1.9323225021362305, dtype=float32), array(0.1627441644668579, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.625150203704834, dtype=float32), array(11.10044002532959, dtype=float32), array(1.9325414896011353, dtype=float32), array(0.2342139035463333, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.771615982055664, dtype=float32), array(13.834222793579102, dtype=float32), array(1.9087940454483032, dtype=float32), array(0.26655063033103943, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.6298327445983887, dtype=float32), array(11.477981567382812, dtype=float32), array(1.9088066816329956, dtype=float32), array(0.24256718158721924, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.1050400733947754, dtype=float32), array(2.356480836868286, dtype=float32), array(1.9178515672683716, dtype=float32), array(0.16525740921497345, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.6523406505584717, dtype=float32), array(12.610499382019043, dtype=float32), array(1.8605197668075562, dtype=float32), array(0.25432220101356506, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.055140972137451, dtype=float32), array(19.580583572387695, dtype=float32), array(1.8479543924331665, dtype=float32), array(0.3205554187297821, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.4027953147888184, dtype=float32), array(25.861204147338867, dtype=float32), array(1.8281105756759644, dtype=float32), array(0.3730301558971405, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.8109235763549805, dtype=float32), array(16.16314697265625, dtype=float32), array(1.8047722578048706, dtype=float32), array(0.2882324457168579, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.901634454727173, dtype=float32), array(33.540931701660156, dtype=float32), array(1.863974928855896, dtype=float32), array(0.4538116157054901, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.795708179473877, dtype=float32), array(16.382612228393555, dtype=float32), array(1.777010202407837, dtype=float32), array(0.28841784596443176, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.102097272872925, dtype=float32), array(22.264537811279297, dtype=float32), array(1.7323167324066162, dtype=float32), array(0.34316930174827576, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(3.3397879600524902, dtype=float32), array(25.358318328857422, dtype=float32), array(1.7670899629592896, dtype=float32), array(0.39313656091690063, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.0078184604644775, dtype=float32), array(2.2347171306610107, dtype=float32), array(1.8234986066818237, dtype=float32), array(0.16375888884067535, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.410407066345215, dtype=float32), array(10.684381484985352, dtype=float32), array(1.7341794967651367, dtype=float32), array(0.22871755063533783, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(1.9386956691741943, dtype=float32), array(2.284365653991699, dtype=float32), array(1.747312068939209, dtype=float32), array(0.16453078389167786, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(1.9690381288528442, dtype=float32), array(4.111074447631836, dtype=float32), array(1.6702393293380737, dtype=float32), array(0.1767571121454239, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.6082828044891357, dtype=float32), array(15.7861909866333, dtype=float32), array(1.6082254648208618, dtype=float32), array(0.29115909337997437, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.284514904022217, dtype=float32), array(10.611721992492676, dtype=float32), array(1.5993322134017944, dtype=float32), array(0.23456335067749023, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.9521536827087402, dtype=float32), array(22.64162254333496, dtype=float32), array(1.5189250707626343, dtype=float32), array(0.37709394097328186, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.346909761428833, dtype=float32), array(13.240262031555176, dtype=float32), array(1.492767572402954, dtype=float32), array(0.2667675316333771, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.293555736541748, dtype=float32), array(13.649069786071777, dtype=float32), array(1.4086145162582397, dtype=float32), array(0.2729184031486511, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.7270607948303223, dtype=float32), array(21.30735969543457, dtype=float32), array(1.3934541940689087, dtype=float32), array(0.33791133761405945, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.5594873428344727, dtype=float32), array(16.629343032836914, dtype=float32), array(1.5093777179718018, dtype=float32), array(0.2941112518310547, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.442148208618164, dtype=float32), array(16.454622268676758, dtype=float32), array(1.3957240581512451, dtype=float32), array(0.2934793531894684, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.7920632362365723, dtype=float32), array(23.11536979675293, dtype=float32), array(1.3207902908325195, dtype=float32), array(0.381543904542923, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.3078362941741943, dtype=float32), array(17.088109970092773, dtype=float32), array(1.201195240020752, dtype=float32), array(0.312295138835907, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(1.8981659412384033, dtype=float32), array(10.432119369506836, dtype=float32), array(1.2019898891448975, dtype=float32), array(0.23466961085796356, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(1.754544973373413, dtype=float32), array(10.315181732177734, dtype=float32), array(1.0588960647583008, dtype=float32), array(0.2328345775604248, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.3625495433807373, dtype=float32), array(18.799755096435547, dtype=float32), array(1.146675944328308, dtype=float32), array(0.33321934938430786, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(1.7518985271453857, dtype=float32), array(10.326698303222656, dtype=float32), array(1.0516372919082642, dtype=float32), array(0.23650813102722168, dtype=float32)]
+04-27 15:57 [MainProcess, 15072] [DEBUG]  [array(2.19354248046875, dtype=float32), array(16.7268009185791, dtype=float32), array(1.0983368158340454, dtype=float32), array(0.3137824237346649, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.470667839050293, dtype=float32), array(21.483253479003906, dtype=float32), array(1.1062805652618408, dtype=float32), array(0.34553852677345276, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.5805072784423828, dtype=float32), array(5.082921504974365, dtype=float32), array(1.1981754302978516, dtype=float32), array(0.18809454143047333, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.492070436477661, dtype=float32), array(14.557087898254395, dtype=float32), array(1.55458402633667, dtype=float32), array(0.2873612344264984, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.0200347900390625, dtype=float32), array(8.19738483428955, dtype=float32), array(1.4654529094696045, dtype=float32), array(0.21798528730869293, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.3482619524002075, dtype=float32), array(1.9620954990386963, dtype=float32), array(1.1388922929763794, dtype=float32), array(0.1682095229625702, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(3.044738292694092, dtype=float32), array(30.50766372680664, dtype=float32), array(1.100890040397644, dtype=float32), array(0.47350946068763733, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.5971447229385376, dtype=float32), array(0.0, dtype=float32), array(1.5031381845474243, dtype=float32), array(0.16916333138942719, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.136049270629883, dtype=float32), array(15.886240005493164, dtype=float32), array(1.1067854166030884, dtype=float32), array(0.29029110074043274, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.9206618070602417, dtype=float32), array(13.258893013000488, dtype=float32), array(1.034976601600647, dtype=float32), array(0.27448946237564087, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.139402389526367, dtype=float32), array(16.328262329101562, dtype=float32), array(1.0610134601593018, dtype=float32), array(0.31502658128738403, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.1750328540802, dtype=float32), array(17.85037612915039, dtype=float32), array(1.0244171619415283, dtype=float32), array(0.30931779742240906, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.9097695350646973, dtype=float32), array(13.280336380004883, dtype=float32), array(1.0317448377609253, dtype=float32), array(0.26559504866600037, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.3814928531646729, dtype=float32), array(3.718944787979126, dtype=float32), array(1.0822150707244873, dtype=float32), array(0.16744132339954376, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.012873888015747, dtype=float32), array(14.096573829650879, dtype=float32), array(1.0678831338882446, dtype=float32), array(0.2935565114021301, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.2328624725341797, dtype=float32), array(17.411865234375, dtype=float32), array(1.1023352146148682, dtype=float32), array(0.31505057215690613, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.5279767513275146, dtype=float32), array(0.0, dtype=float32), array(1.432119369506836, dtype=float32), array(0.16746346652507782, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.2438234090805054, dtype=float32), array(1.8308064937591553, dtype=float32), array(1.033953070640564, dtype=float32), array(0.17002767324447632, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.9843533039093018, dtype=float32), array(30.328044891357422, dtype=float32), array(1.0490609407424927, dtype=float32), array(0.4713430404663086, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.0837690830230713, dtype=float32), array(14.638893127441406, dtype=float32), array(1.109986662864685, dtype=float32), array(0.297337144613266, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.4933743476867676, dtype=float32), array(0.0, dtype=float32), array(1.3867653608322144, dtype=float32), array(0.17594732344150543, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.7347707748413086, dtype=float32), array(10.86223030090332, dtype=float32), array(1.0070559978485107, dtype=float32), array(0.234956294298172, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.645423650741577, dtype=float32), array(20.871065139770508, dtype=float32), array(1.3232834339141846, dtype=float32), array(0.3447514474391937, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.342681407928467, dtype=float32), array(17.735681533813477, dtype=float32), array(1.1802048683166504, dtype=float32), array(0.33470284938812256, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.8136643171310425, dtype=float32), array(11.286200523376465, dtype=float32), array(1.045392632484436, dtype=float32), array(0.25623127818107605, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(1.8728508949279785, dtype=float32), array(12.587631225585938, dtype=float32), array(1.0206915140151978, dtype=float32), array(0.2738124430179596, dtype=float32)]
+04-27 15:58 [MainProcess, 15072] [DEBUG]  [array(2.2268733978271484, dtype=float32), array(17.38233757019043, dtype=float32), array(1.070978045463562, dtype=float32), array(0.3403274416923523, dtype=float32)]
